@@ -25,7 +25,7 @@ nav, section, footer, article, aside{
     text-align: center;
 }
 
-article, aside{
+article{
     border: 2px solid rgb(8, 8, 8);
     width: 42%;
     display: inline-block;
@@ -35,7 +35,16 @@ article, aside{
 }
 
 aside{
+    border: 2px solid rgb(8, 8, 8);
     width: 20%;
+    display: inline-block;
+    height: 130px;
+    background-color: #F7F9F9;
+}
+aside img{
+    text-align: center;
+    width: 50%;
+    height: 140px
 }
 
 nav, section, footer{
