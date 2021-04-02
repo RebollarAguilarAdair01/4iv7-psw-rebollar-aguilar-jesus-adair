@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 5</title>
+    <link rel="stylesheet" href="./css/problemas.css">
+    <script src="JS/problema05.js"></script>
+</head>
+<body>
+    <p>Se le ha ordenado diseñar una aplicación web que pueda calcular el porcentaje
+        de alumnos y alumnas de un salón de clases
+    </p>
+    <form action="POST" name="formulario">
+        <table align="center" border="1">
+            <tr>
+                <td class="td_sup">Ingrese el número de alumnas</td>
+                <td class="td_inf"><input type="text" name="NoAlumnas"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Ingrese el número de alumnos</td>
+                <td class="td_inf"><input type="text" name="NoAlumnos"
+                    onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="calcular"
+                    name="enviar" onclick="calcular()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">El porcentaje de alumnas es de:</td>
+                <td><input type="text" name="ResultAlumna" id="ResultadoA"
+                    readonly = "readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">El porcentaje de alumnos es de:</td>
+                <td><input type="text" name="ResultAlumno" id="ResultadoO"
+                    readonly = "readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Borrar" name="reset" onclick="Borrar()"></td>
+            </tr>
+
+        </table>
+    </form>
+    <br>
+    <a href="formulario.html">Regresar al formulario principal</a>
+    
+</body>
+</html>
