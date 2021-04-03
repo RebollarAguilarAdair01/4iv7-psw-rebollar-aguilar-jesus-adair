@@ -31,3 +31,8 @@ p{
     justify-content: center;
     color: #000000;
 }
+nav{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
