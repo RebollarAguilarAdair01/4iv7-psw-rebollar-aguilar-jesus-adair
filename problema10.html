@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problema 9</title>
+    <title>Problema 10</title>
     <link rel="stylesheet" href="./css/problemas.css">
-    <script src="JS/problema09.js"></script>
+    <script src="JS/problema10.js"></script>
 </head>
 <body>
-    <p>Se le ha ordenado diseñar una aplicación web que pueda calcular el dinero a recibir de 
-        un trabajador contemplando horas extras. 
+    <p>Calcular la utilida que un trabajador recibe en el reparto anual de utilidades 
+        si este se le asigna como un porcentaje de su salario mensual que depende de su antiguedad
+        en la empresa.
     </p>
     <form action="POST" name="formulario">
         <table align="center" border="1">
             <tr>
-                <td class="td-sup">Ingrese cuanto le pagan por hora: $</td>
-                <td class="td_inf"><input type="text" name="Paga"
+                <td class="td_sup">Ingresa el número de meses que llevas en la empresa</td>
+                <td class="td_inf"><input type="text" name="Ant"
                     onkeypress="return validarn(event)"></td>
             </tr>
             <tr>
-                <td class="td_sup">Ingrese el número de horas que trabajó en total: </td>
-                <td class="td_inf"><input type="text" name="Hrs"
+                <td class="td_sup">Ingresa tu saldo mensual</td>
+                <td class="td_inf"><input type="text" name="Sal"
                     onkeypress="return validarn(event)"></td>
             </tr>
             <tr>
@@ -30,13 +31,8 @@
                     onclick="calcular()"></td>
             </tr>
             <tr>
-                <td class="td_sup">Le deben pagar lo correspondiente al siguiente número de horas: </td>
-                <td><input type="text" name="ToHrs" id="horas" readonly = "readonly"
-                    class="input_text"></td>
-            </tr>
-            <tr>
-                <td class="td_sup">El total de dinero que recibirá es de: $</td>
-                <td><input type="text" name="ToPaga" id="Dinero" readonly = "readonly"
+                <td class="td_sup">Su utilidad anual será de: $</td>
+                <td><input type="text" name="UtiF" id="Utilidad" readonly = "readonly"
                     class="input_text"></td>
             </tr>
             <tr>
